@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Domande">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textdomanda"
+            android:text="Domanda"
+            android:textSize="30dp"
+            android:layout_marginTop="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="116dp"
+            android:layout_below="@+id/textdomanda"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERO"
+                android:id="@+id/id_true"
+                android:checked="false"
+                android:textSize="30dp"
+                android:textColor="#37ff00"
+                android:textAlignment="textStart"
+                android:singleLine="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:onClick="onClickRadio" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FALSO"
+                android:id="@+id/id_false"
+                android:checked="false"
+                android:textSize="30dp"
+                android:textColor="#ff0000"
+                android:textAlignment="textStart"
+                android:singleLine="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClickRadio" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</FrameLayout>
